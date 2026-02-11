@@ -1,0 +1,285 @@
+# Typora Themes Repository Git Ignore
+# Created to avoid committing copyrighted font files and other infringing content
+
+# ============================================
+# FONT FILES - AVOID COPYRIGHT INFRINGEMENT
+# ============================================
+
+# TrueType Fonts
+*.ttf
+*.TTF
+
+# OpenType Fonts
+*.otf
+*.OTF
+
+# Web Open Font Format
+*.woff
+*.WOFF
+*.woff2
+*.WOFF2
+
+# Embedded OpenType
+*.eot
+*.EOT
+
+# SVG Fonts
+*.svg
+*.SVG
+
+# Font Collections
+*.ttc
+*.TTC
+*.otc
+*.OTC
+
+# ============================================
+# OPERATING SYSTEM FILES
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+
+# Thumbnails
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Windows
+*.lnk
+*.url
+
+# Linux
+*~
+
+# ============================================
+# EDITOR AND IDE FILES
+# ============================================
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ============================================
+# BUILD ARTIFACTS AND TEMPORARY FILES
+# ============================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ruby
+*.gem
+.bundle/
+.ruby-version
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# ============================================
+# TYPORA SPECIFIC
+# ============================================
+
+# Typora temporary files
+.typora/
+
+# Theme build artifacts
+*-min.css
+*-dist/
+dist/
+build/
+
+# ============================================
+# PERSONAL AND SENSITIVE FILES
+# ============================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Secrets
+secrets.yml
+credentials.json
+service-account-key.json
+*.pem
+*.key
+*.crt
+
+# ============================================
+# LOGS AND DATABASES
+# ============================================
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# MISC
+# ============================================
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+# Comment in the public rule in this project if using a name other than 'public'
+# public
+
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# Temporary folders
+tmp/
+temp/
+
+# ============================================
+# DOCUMENTATION
+# ============================================
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# MkDocs
+site/
+
+# ============================================
+# TESTING
+# ============================================
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Playwright
+test-results/
+playwright-report/
+
+# ============================================
+# CUSTOM RULES FOR THIS REPOSITORY
+# ============================================
+
+# Ignore all font files in any directory
+**/*.ttf
+**/*.otf
+**/*.woff
+**/*.woff2
+**/*.eot
+**/*.svg
+
+# But keep CSS files that reference fonts (these are safe)
+!*.css
+
+# Keep the Readme file
+!Readme.md
+
+# Keep JSON theme files
+!*.json
+
+# ============================================
+# END OF .gitignore
+# ============================================
