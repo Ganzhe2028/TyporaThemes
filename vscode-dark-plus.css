@@ -1,0 +1,128 @@
+/**
+ * VS Code Dark+ (Dark Plus) Theme for Typora
+ * Replicates the official VS Code default dark experience.
+ * Author: Antigravity (Google DeepMind)
+ */
+
+:root {
+    /* Workbench Colors */
+    --bg-color: #1e1e1e;
+    --text-color: #d4d4d4;
+    --side-bar-bg-color: #252526;
+    --side-bar-text-color: #cccccc;
+    --window-border: #333333;
+    --item-hover-bg-color: #2a2d2e;
+    --active-file-bg-color: #37373d;
+    --active-file-text-color: #ffffff;
+    --primary-accent: #007acc;
+    
+    /* Code Colors (Dark+) */
+    --code-bg: #1e1e1e;
+    --code-keyword: #569cd6;
+    --code-control: #c586c0;
+    --code-string: #ce9178;
+    --code-number: #b5cea8;
+    --code-comment: #6a9955;
+    --code-function: #dcdcaa;
+    --code-variable: #9cdcfe;
+    --code-type: #4ec9b0;
+    
+    /* Font Stacks */
+    --font-mono: "Consolas", "Monaco", "Menlo", "Courier New", monospace;
+    --font-sans: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* --- Base Layout --- */
+html, body {
+    font-size: 16px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+}
+
+#write {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 60px;
+    line-height: 1.6;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 { border-bottom: 1px solid #333; padding-bottom: 0.3em; }
+
+a { color: #3794ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- Sidebar --- */
+#typora-sidebar {
+    background-color: var(--side-bar-bg-color);
+    color: var(--side-bar-text-color);
+    border-right: 1px solid var(--window-border);
+}
+
+.file-list-item { border-bottom: none !important; }
+.file-list-item:hover { background-color: var(--item-hover-bg-color); }
+.file-list-item.active {
+    background-color: var(--active-file-bg-color);
+    color: var(--active-file-text-color);
+    border-left: 2px solid var(--primary-accent);
+}
+
+/* --- Code Blocks (Syntax Highlighting) --- */
+.md-fences {
+    background-color: var(--code-bg);
+    color: var(--text-color);
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 12px;
+    font-family: var(--font-mono);
+    margin-bottom: 1.5em;
+}
+
+/* CodeMirror Selectors for Typora */
+.cm-s-inner .cm-keyword { color: var(--code-control); }
+.cm-s-inner .cm-operator { color: var(--text-color); }
+.cm-s-inner .cm-variable { color: var(--code-variable); }
+.cm-s-inner .cm-variable-2 { color: var(--code-variable); }
+.cm-s-inner .cm-builtin { color: var(--code-function); }
+.cm-s-inner .cm-atom { color: var(--code-keyword); } /* Booleans */
+.cm-s-inner .cm-number { color: var(--code-number); }
+.cm-s-inner .cm-def { color: var(--code-function); }
+.cm-s-inner .cm-string { color: var(--code-string); }
+.cm-s-inner .cm-comment { color: var(--code-comment); }
+.cm-s-inner .cm-type { color: var(--code-type); }
+.cm-s-inner .cm-tag { color: var(--code-keyword); }
+.cm-s-inner .cm-attribute { color: var(--code-variable); }
+.cm-s-inner .cm-meta { color: var(--code-keyword); }
+.cm-s-inner .cm-header { color: var(--code-control); }
+
+/* --- UI Elements --- */
+blockquote {
+    border-left: 4px solid #424242;
+    padding: 0 15px;
+    color: #a0a0a0;
+    margin: 1.5em 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 8px 12px;
+}
+
+thead { background-color: #252526; }
+
+::selection { background-color: #264f78; color: #ffffff; }
